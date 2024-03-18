@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+message CreateRequest {
+    int64 amount = 1;
+    string currency = 2;
+}
+
+message CreateResponse {
+    
+}
+
+service Invoicer {
+    rpc Create (CreateRequest) returns (CreateResponse);
+    
+}
